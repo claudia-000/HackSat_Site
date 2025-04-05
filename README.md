@@ -1,2 +1,2 @@
 # HackSat_Site
-Site for the HackSat Hackathon
+This is the repository for the site created for the HackSat Hackathon
