@@ -67,7 +67,6 @@ li a {
     .navbar{
         align-content: center;
         position: fixed;
-        background-color: lavender;
         z-index: 9;
         top:0px !important;
     }
@@ -157,3 +156,47 @@ li a {
 }
 
 
+/*-----------------------------------------------------------------------------*/
+/* reto */
+/* Contenedor principal */
+.pagina-contexto {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+  }
+  
+  /* Encabezado */
+  .pagina-contexto header {
+    background-color: #1f2937;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+  }
+  
+  /* Contenido principal */
+  .pagina-contexto main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  
+  .pagina-contexto section {
+    margin-bottom: 40px;
+  }
+  
+  .pagina-contexto h2 {
+    color: #1f2937;
+    margin-bottom: 10px;
+  }
+  
+  /* Footer */
+  .pagina-contexto footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ddd;
+    font-size: 14px;
+    color: #444;
+  }
+  
