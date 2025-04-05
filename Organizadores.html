@@ -3,7 +3,7 @@
     <head>  
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Paloma Monr&oacute;s</title>
+        <title>Organizadores</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
         <link rel="stylesheet" href="bootstrap-icons.css">
@@ -13,120 +13,45 @@
     <body>
         
 
-        <div class="requisitoaltura" style="min-height: 3000px !important;">
-            <nav class="navbar navbar-expand-lg static-top" style="margin-top: 20px; margin-bottom: 20px;">
-                <div class="container">
-                    <a class="navbar-brand" href="Inicio.html"><img src="imgs/sat_logo.png"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item"><a class="nav-link" href="Organizadores.html"><i class="bi bi-palette"></i>  Organizadores</a></li>
-                            <li class="nav-item"><a class="nav-link" href="Jurado.html"><i class="bi bi-collection"></i>  Conoce al Jurado</a></li>
-                            <li class="nav-item"><a class="nav-link" href="Programa.html"><i class="bi bi-chat-square"></i>  Programa</a></li>
-                        </ul>
-                    </div>
-                    
+        <nav class="navbar navbar-expand-lg static-top" style="margin-top: 20px; margin-bottom: 20px;">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="imgs/sat_logo.png"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="Reto.html"><i class="bi bi-lightbulb"></i>  El Reto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Programa.html"><i class="bi bi-calendar-event"></i>  Programa</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Jurado.html"><i class="bi bi-person-badge"></i>  Conoce al Jurado</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Organizadores.html"><i class="bi bi-people-fill"></i>  Organizadores</a></li>
+                    </ul>
                 </div>
-            </nav> 
+                
+            </div>
+        </nav> 
 
         <br>
-        <div class="row fotoyo" style="align-items: center; justify-content: center;">
-            <div style="align-items: center; margin: 40px; margin-left: 5px;">
-                <img src="imgs/foto_yo.png" alt="persona">
-            </div>
-            <p class="infoyo">Nombre: Claudia Ortiz <br> Tel&eacute;fono: +34 000 000 000 <br> Universidad: UFV </p>
-        </div>
-            <div class="row" style="align-items: center; justify-content: center;">
-                <div style="margin:150px; ">
-                    <div class="comentarios">
-                        <p class="infoyo"><b>¿Qu&eacute; te ha parecido la web?<br>¿Tienes alg&uacute;n comentario o pregunta?</b></p>
-                    <form method="get" action="https://postman-echo.com/get" style="margin-top: 20px; margin:40px;">                   
-                    <p>
-                        <label for="nombre" class="colocar_nombre">Nombre<span class="ob">*</span></label>
-                        <input class="delforms" type="text" name="introducir_nombre" id="nombre" placeholder="Escribe tu nombre" required="ob" style="width:250px;">
-                    </p>
-                    <p>
-                        <label for="email" class="colocar_email">Email<span class="ob">*</span></label>
-                        <input class="delforms" type="email" name="introducir_email" id="email" placeholder="Escribe tu Email" required="ob" style="width:250px;">
-                    </p>
-                    <p>
-                        <label for="telefone" class="colocar_telefono">Teléfono<span class="ob">*</span></label>
-                        <input class="delforms" type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono" required="ob" style="width:250px;">
-                    </p>    
-                    <p>
-                        <label for="gender" class="colocar_genero">G&eacute;nero<span class="ob">*</span></label>
-                        <input class="delforms" type="text" name="introducir_genero" id="genero" list="datalistOptions" placeholder="Genero" required="ob" >
-                        <datalist id="datalistOptions">
-                            <option value="Mujer"></option>
-                            <option value="Hombre"></option>
-                            <option value="Otro"></option>
-                        </datalist>
-                    </p>    
-                    <p>
-                        <label for="asunto" class="colocar_asunto">Asunto<span class="ob">*</span></label>
-                        <input class="delforms" type="text" name="introducir_asunto" id="asunto" placeholder="Escribe un asunto" required="ob" >
-                    </p>    
-                    <p>
-                        <label for="mensaje" class="colocar_mensaje">Mensaje</label>                     
-                        <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" placeholder="Deja aquí tu comentario..."></textarea> 
-                    </p>
-                    <p>
-                        <input class="form-check-input cuadradopqnio" type="checkbox" value="" id="acepto" required>
-                        <label class="form-check-label txtopqnio" for="acepto"> Acepto los T&eacute;rminos y Condiciones. </label>
-                    </p><br>                    
-                    <button class="enviar"type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
-                    <p class="aviso">
-                        <br><span class="obligatorio"> * </span>los campos son obligatorios.
-                    </p>
-                    <p id="error"></p>
-                    </form>              
-                    </div>
-                </div>
+        
 
-                <div>
-                    <div class="info_contacto">
-                        <div style="align-items: center;">
-                            <img src="imgs/foto_yo.png" alt="persona">
-                        </div><br>
-                        <p style="font-size: 22; margin-bottom: 40px;"><b>Tambi&eacute;n puedes contactarnos: </b>
-                            <br> 
-                            <span style="font-size: 16; padding-left:30px;"> Mail:   claudia.or102@gmail.com  <br> </span>
-                            <span style="font-size: 16; padding-left:30px;"> Tel&eacute;fono:  000 000 000  <br> </span>
-                            <span style="font-size: 16; padding-left:30px;"> Y a trav&eacute;s de nuestras RRSS! <br><a class="enlacesinternos" href="https://www.facebook.com/profile.php?id=100073163742076"><i class="bi bi-facebook"></i> Facebook</a><br><a class="enlacesinternos" href="https://www.instagram.com/"><i class="bi bi-instagram"></i> Instagram</a><br><a class="enlacesinternos"><i class="bi bi-whatsapp"></i> WhatsApp: +34 000 000 000</a></span>      <br>
-                        </p>
-                        <div id="map-container-google-1" class="z-depth-1-half map-container" style="height:75%; width:75%; margin: auto; ">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12121.090494380323!2d-3.9354953670545925!3d40.579737369542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4177c2c48e0265%3A0x8f461cb50b83d086!2s28250%20Torrelodones%2C%20Madrid!5e0!3m2!1ses!2ses!4v1667128719674!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <br><br>
-        <br><br>        
 
-        <div class="foot_" style="width: 100%; float:left; bottom:0; margin-bottom: 0;">
+
+
+        <div class="foot_" style="width: 100%; float:left; bottom:0; margin-bottom: 0; margin-top:10%;">  
             <footer class="text-center text-lg-start bg-light text-muted">
-            
             <div class="row" style="padding: 15px;">
-                <div class="col-4 conmargins" style="float: left; color:black;margin-top:10px;"><b>ENLACES INTERNOS</b><p><a class="enlacesinternos" href="Inicio.html">P&aacute;gina de Inicio</a><br><a class="enlacesinternos" href="Quien era.html">Sobre Paloma Monros</a><br><a class="enlacesinternos" href="Imagenes.html">Galeria de Imagenes</a><br><a class="enlacesinternos" href="Contacto.html">Pagina de Contacto</a></p>
-                </div>
-                <div class="col-4 conmargins">
+                <div class="col-4" style="margin-right: 5%;">
                     <p class="text-uppercase fw-bold mb-4" style=" color:black; text-decoration: bold;">Contacto</p>
-                    <p><i class="fas fa-home me-3"></i> Torrelodones, Madrid, 28250, España</p>
-                    <p><i class="fas fa-envelope me-3"></i>claudia.or102@gmail.com</p>
-                    <p><i class="fas fa-phone me-3"></i> +34 000 000 000</p>
+                    <p><i class="fas fa-envelope me-3"></i>estudiantesrsef.ucm@gmail.com</p>
                 </div>
-                <div class="col-4 conmargins" style="float: right; color:black; margin-top:10px;">
-                    <b>REDES SOCIALES</b><br> <a class="enlacesinternos" href="https://www.facebook.com/profile.php?id=100073163742076"><i class="bi bi-facebook"></i> Facebook</a><br><a class="enlacesinternos" href="https://www.instagram.com/"><i class="bi bi-instagram"></i> Instagram</a><br><a class="enlacesinternos"><i class="bi bi-whatsapp"></i> WhatsApp: +34 000 000 000</a>
+                <div class="col-4 " style="float: right; color:black; margin-top:10px;"> <!-- ENLACE A INSTAGRAM Y CANAL WHATSAPP -->
+                    <b>REDES SOCIALES</b><br> <a class="enlacesinternos" href="https://www.instagram.com/"><i class="bi bi-instagram"></i> Instagram</a><br><a class="enlacesinternos"><i class="bi bi-whatsapp"></i> WhatsApp: +34 000 000 000</a>
                 </div>
             </div>
             <hr>
             <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0); font-size: x-large !important; margin: 10px;"> © 2021 Copyright: <a class="text-reset fw-bold" href="https://copyright.es/copyright_de_sitio_internet.html">Copyright.es</a>
             </div>
             </footer>
-        </div>
         </div>
 
         
