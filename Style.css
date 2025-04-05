@@ -158,45 +158,66 @@ li a {
 
 /*-----------------------------------------------------------------------------*/
 /* reto */
-/* Contenedor principal */
-.pagina-contexto {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-    padding: 20px;
-  }
-  
-  /* Encabezado */
-  .pagina-contexto header {
-    background-color: #1f2937;
-    color: white;
-    padding: 30px 20px;
-    text-align: center;
-  }
-  
-  /* Contenido principal */
-  .pagina-contexto main {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 0 20px;
-  }
-  
-  .pagina-contexto section {
+
+.pagina-contexto section {
     margin-bottom: 40px;
-  }
+}
   
-  .pagina-contexto h2 {
+.pagina-contexto h2 {
     color: #1f2937;
     margin-bottom: 10px;
+}
+  
+
+/*-----------------------------------------------------------------------------*/
+/* programa */
+.container {
+    padding: 5vh 5vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
-  /* Footer */
-  .pagina-contexto footer {
+.titulo-programa {
     text-align: center;
-    padding: 20px;
-    background-color: #ddd;
-    font-size: 14px;
-    color: #444;
+    font-size: 3em;
+    margin-bottom: 2em;
+    color: #0f111a;
+}
+  
+.dia {
+    margin-bottom: 4em;
+    background-color: white;
+    padding: 2em;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+  
+.dia-titulo {
+    font-size: 2em;
+    color: #53a37d;
+    margin-bottom: 1em;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 0.5em;
+}
+  
+.agenda {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.agenda li {
+    font-size: 1.1em;
+    padding: 1em 0;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
+  
+.hora {
+    font-weight: bold;
+    color: #356c8d;
+    display: inline-block;
+    width: 160px;
+}
   
