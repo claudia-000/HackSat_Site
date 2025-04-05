@@ -67,9 +67,11 @@ li a {
     .navbar{
         align-content: center;
         position: fixed;
-        background-color: transparent;
         z-index: 9;
         top:0px !important;
+    }
+    .carousel{
+        margin-top:200px !important;
     }
 }
 
@@ -79,6 +81,9 @@ li a {
         position: relative;
         background-color: transparent;
         z-index: 0;
+    }
+    .carousel{
+        margin-top:30px !important;
     }
 }
 
