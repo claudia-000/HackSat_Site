@@ -3,30 +3,35 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Programa</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> <!-- es para el css del navbar -->
         <link rel="stylesheet" href="Style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 
     </head>
     <body>
          
-        <nav class="navbar navbar-expand-lg static-top" style="margin-top: 20px; margin-bottom: 20px;">
+        <nav class="navbar navbar-expand-lg custom-navbar">
             <div class="container">
-                <a class="navbar-brand" href="index.html"><img src="imgs/sat_logo.png"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <a class="navbar-brand" href="index.html">
+                <img src="imgs/sat_logo.png" alt="Logo" />
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="margin-right: 5%;">
                 <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="Reto.html"><i class="bi bi-lightbulb"></i>  El Reto</a></li>
-                        <li class="nav-item"><a class="nav-link" href="Programa.html"><i class="bi bi-calendar-event"></i>  Programa</a></li>
-                        <li class="nav-item"><a class="nav-link" href="Jurado.html"><i class="bi bi-person-badge"></i>  Conoce al Jurado</a></li>
-                        <li class="nav-item"><a class="nav-link" href="Organizadores.html"><i class="bi bi-people-fill"></i>  Organizadores</a></li>
-                    </ul>
-                </div>
-                
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link" href="Reto.html"><i class="bi bi-lightbulb"></i> El Reto</a></li>
+                  <li class="nav-item"><a class="nav-link" href="Programa.html"><i class="bi bi-calendar-event"></i> Programa</a></li>
+                  <li class="nav-item"><a class="nav-link" href="Jurado.html"><i class="bi bi-person-badge"></i> Conoce al Jurado</a></li>
+                  <li class="nav-item"><a class="nav-link" href="Organizadores.html"><i class="bi bi-people-fill"></i> Organizadores</a></li>
+                </ul>
+              </div>
             </div>
-        </nav> 
+        </nav>  
 
 
         <div class="container">
@@ -65,22 +70,35 @@
 
           
         <div class="foot_" style="width: 100%; float:left; bottom:0; margin-bottom: 0; margin-top:10%;">  
-            <footer class="text-center text-lg-start bg-light text-muted">
-            <div class="row" style="padding: 15px;">
-                <div class="col-4" style="margin-right: 5%;">
-                    <p class="text-uppercase fw-bold mb-4" style=" color:black; text-decoration: bold;">Contacto</p>
-                    <p><i class="fas fa-envelope me-3"></i>estudiantesrsef.ucm@gmail.com</p>
+            <footer class="text-center text-lg-start bg-light text-muted mt-5">
+                <div class="container py-4">
+                  <div class="row">
+                    <div class="col-md-6 mb-4 mb-md-0">
+                      <h5 class="text-uppercase fw-bold">Contacto</h5>
+                      <p><i class="fas fa-envelope me-2"></i> estudiantesrsef.ucm@gmail.com</p>
+                    </div>
+                    <div class="col-md-6 mb-4 mb-md-0">
+                      <h5 class="fw-bold">Redes Sociales</h5>
+                      <a class="enlacesinternos d-block mb-2" href="https://www.instagram.com/">
+                        <i class="bi bi-instagram"></i> Instagram
+                      </a>
+                      <span class="enlacesinternos d-block"><i class="bi bi-whatsapp"></i> WhatsApp: +34 000 000 000</span>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="text-center p-3" style="font-size: 1rem;">
+                    © 2025 Copyright:
+                    <a class="text-reset fw-bold" href="https://copyright.es/copyright_de_sitio_internet.html">Copyright.es</a>
+                  </div>
                 </div>
-                <div class="col-4 " style="float: right; color:black; margin-top:10px;"> <!-- ENLACE A INSTAGRAM Y CANAL WHATSAPP -->
-                    <b>REDES SOCIALES</b><br> <a class="enlacesinternos" href="https://www.instagram.com/"><i class="bi bi-instagram"></i> Instagram</a><br><a class="enlacesinternos"><i class="bi bi-whatsapp"></i> WhatsApp: +34 000 000 000</a>
-                </div>
-            </div>
-            <hr>
-            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0); font-size: x-large !important; margin: 10px;"> © 2021 Copyright: <a class="text-reset fw-bold" href="https://copyright.es/copyright_de_sitio_internet.html">Copyright.es</a>
-            </div>
             </footer>
         </div>
 
-        </div>
+        
+        
+        <script src="https://code.jquery.com/git/jquery-3.x-git.min.js"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
     </body>
 </html>
