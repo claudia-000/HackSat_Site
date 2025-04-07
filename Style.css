@@ -153,13 +153,28 @@ li a {
     }
   }
 /*-------------------------------------------------------------------------------------*/
-.titulo {
-    font-size: 10vw;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 20%; /* Ajusta este valor según la altura de tu navbar */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #000000;
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 10vw;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 20%; /* Ajusta este valor según la altura de tu navbar */
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #000000;
+    }
+    .titulo-reto{
+        margin-top: 15%; /* Ajusta este valor según la altura de tu navbar */
+    }
+    
+    .titulo-programa {
+        margin-top: 15%;
+    }
+    .titulo-jurado{
+        margin-top: 15%;
+    }
+    .titulo-organizadores{
+        margin-top: 15%;
+    }
 }
 /*-------------------------------------------------------------------------------------*/
 @media(min-width: 300px){
@@ -244,7 +259,7 @@ li a {
 
 /*-----------------------------------------------------------------------------*/
 /* programa */
-.container {
+.cont {
     padding: 5vh 5vw;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     max-width: 1140px;
@@ -254,7 +269,7 @@ li a {
 }
  
 @media (min-width: 1200px) {
-    .container {
+    .cont {
       max-width: 1280px;
     }
 } 
@@ -265,6 +280,7 @@ li a {
     margin-bottom: 2em;
     color: #0f111a;
 }
+
   
 .dia {
     margin-bottom: 4em;
