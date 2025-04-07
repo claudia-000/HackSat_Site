@@ -99,9 +99,6 @@ li a {
         z-index: 9;
         top:0px !important;
     }
-    .carousel{
-        margin-top:200px !important;
-    }
 }
 
 @media(min-width: 700px){
@@ -110,9 +107,6 @@ li a {
         position: relative;
         background-color: transparent;
         z-index: 0;
-    }
-    .carousel{
-        margin-top:30px !important;
     }
 }
 
@@ -128,44 +122,76 @@ li a {
         justify-content: space-between;
         align-items: center;
     }
-
     .navbar .container {
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
-  
     .navbar-brand {
       margin-right: auto;
-    }
-  
+    }  
     .navbar-toggler {
       margin-left: auto;
       border: none;
-    }
-  
+    }  
     .navbar-toggler-icon {
       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='black' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
     }
-
-    .titulo {
-        padding-top: 10%; /* Este padding agrega un margen de 5% al contenido debajo del navbar */
-    }
   }
+
+.titulo-index {
+    /*padding-top: 10%;  Este padding agrega un margen de 5% al contenido debajo del navbar */
+    font-size: 10vw; 
+    font-weight: bold; 
+    text-align: center; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    color: #000000;
+}
+
+.descripcion{
+    font-size: 1.75vw; 
+    text-align: center; 
+    margin-top: 2%; 
+    width:70%; 
+    margin-left: 15%; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.desarrollado_colab_por {
+    font-size: 4vw;
+    text-align: center;
+    margin-top: 10%;
+    align-items: center;
+    width: 96%;
+    margin-left: 2%;
+}
+
+.desarrollado_colab_por .imgs {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 7%;
+    flex-wrap: wrap;
+}
+
+.desarrollado_colab_por .imgs .imgn {
+    width: 15vw;
+    align-content: center;
+}
+
+.desarrollado_colab_por img {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
 /*-------------------------------------------------------------------------------------*/
-@media (max-width: 768px) {
-    .titulo {
-        font-size: 10vw;
-        font-weight: bold;
-        text-align: center;
-        margin-top: 20%; /* Ajusta este valor según la altura de tu navbar */
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        color: #000000;
+@media (max-width: 768px) { /* Ajusta este valor según la altura de tu navbar */
+    .titulo-index {
+        margin-top: 20%;
     }
     .titulo-reto{
-        margin-top: 15%; /* Ajusta este valor según la altura de tu navbar */
+        margin-top: 15%;
     }
-    
     .titulo-programa {
         margin-top: 15%;
     }
@@ -188,17 +214,6 @@ li a {
     }  
 }
 
-@media(min-width: 700px){
-    .row{
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-        justify-items: center;
-        text-align: center;
-        font-size: large !important;
-    }  
-}
-
 @media(min-width: 1000px){
     .row{
         align-content: center;
@@ -208,28 +223,6 @@ li a {
         text-align: center;
         font-size: x-large !important;
     }  
-}
-
-@media(min-width: 1140px){
-    .row{
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-        justify-items: center;
-        text-align: center;
-        font-size: x-large !important;
-    }  
-}
-
-@media(min-width: 1700px){
-    .row{
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-        justify-items: center;
-        text-align: center;
-        font-size: x-large !important;
-    }
 }
 
 .enlacesinternos{
@@ -243,6 +236,97 @@ li a {
     color: darkslategrey;
 }
 
+/* --------------------------------------------------------------------------------- */
+
+.bloque-oportunidad {
+    background-color: #0f111a;
+    color: white;
+    border-top-left-radius: 1vw;
+    border-top-right-radius: 1vw;
+    border-bottom-left-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+    padding: 3vw 1.5vw;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 5%;
+}
+
+.bloque-oportunidad .etiqueta {
+    display: inline-block;
+    background-color: #53a37d; /*Otra opción color es #356c8d*/
+    color: #0f111a;
+    font-weight: bold;
+    padding: 0.4vw 0.8vw;
+    border-radius: 0.5vw;
+    font-size: 2vw;
+    margin-bottom: 2%;
+}
+
+.bloque-oportunidad h2 {
+    font-size: 3.5vw;
+    font-weight: 800;
+    margin: 0.8vw 0 2vw 0;
+    line-height: 1.2;
+}
+
+.bloque-oportunidad .extras {
+    display: flex;
+    justify-content: center;
+    gap: 7%;
+    flex-wrap: wrap;
+}
+
+.bloque-oportunidad .extra {
+    text-align: center;
+    margin-top: 1.5%;
+    max-width: 22%;
+}
+
+.bloque-oportunidad .extra i {
+    font-size: 2.5vw;
+    margin-bottom: 4%;
+}
+
+.bloque-oportunidad .extra p {
+    font-size: 1.15vw;
+    font-weight: 500;
+}
+
+/* --------------------------------------------------------------------------------- */
+
+.evento-info {
+    display: flex;
+    justify-content: center;
+    gap: 9%;
+    text-align: center;
+    padding: 1.5vw 1vw;
+    font-family: Arial, sans-serif;
+    margin-top: 5%;
+}
+
+.evento-info .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.evento-info .icon-container {
+    background-color: #6faaa2;
+    border-radius: 1vw;
+    padding: 1vw;
+    margin-bottom: 1.5vw;
+}
+
+.evento-info .icon {
+    font-size: 3vw;
+}
+
+.evento-info .text {
+    color: #161b27;
+    font-size: 1.7vw;
+    line-height: 1.4;
+    font-weight: 500;
+}
 
 /*-----------------------------------------------------------------------------*/
 /* reto */
